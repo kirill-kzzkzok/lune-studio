@@ -1,0 +1,351 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: #fff;
+  border-radius: 999px;
+  padding: 14px 21px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.button:hover {
+  background: #594e4c;
+  border-color: #594e4c;
+  transform: translateY(-2px);
+}
+.button-small {
+  padding: 10px 15px;
+  font-size: 0.75rem;
+}
+.button-ghost {
+  background: transparent;
+  color: var(--ink);
+}
+.text-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.image-placeholder {
+  background: #fff;
+  border: 1px solid #f0ece7;
+  display: grid;
+  place-items: center;
+  color: #111;
+  font-size: clamp(3rem, 10vw, 7rem);
+  font-family: Arial, sans-serif;
+  aspect-ratio: 1;
+  position: relative;
+}
+.image-placeholder figcaption {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  font-size: 0.8rem;
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+}
+.section-heading {
+  margin-bottom: 36px;
+}
+.section-heading > p:not(.eyebrow) {
+  color: var(--muted);
+}
+.benefit-grid,
+.process-grid {
+  display: grid;
+  gap: 10px;
+}
+.benefit-grid article,
+.process-grid article {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+}
+.benefit-grid b,
+.process-grid b {
+  color: #b98285;
+  font-size: 0.7rem;
+}
+.benefit-grid h3,
+.process-grid h3 {
+  font-size: 1.12rem;
+  margin: 20px 0 6px;
+}
+.benefit-grid p,
+.process-grid p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+.service-grid {
+  display: grid;
+  gap: 12px;
+}
+.service-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius);
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+.service-card > p:first-child,
+.master-card > div > p:first-child {
+  font-size: 0.75rem;
+  color: #a47779;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.service-card h3 {
+  margin-bottom: 10px;
+}
+.service-text {
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+.service-card div {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-card strong {
+  font-size: 1.05rem;
+}
+.service-card a {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.master-grid {
+  display: grid;
+  gap: 26px;
+}
+.master-card {
+  display: grid;
+  gap: 17px;
+}
+.master-card .image-placeholder {
+  border-radius: var(--radius);
+}
+.master-card h3 {
+  margin: 6px 0;
+}
+.master-card small {
+  color: #a47779;
+}
+.master-text {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 16px 0;
+}
+.review-grid {
+  display: grid;
+  gap: 12px;
+}
+.review-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 23px;
+}
+.avatar,
+.mini-placeholder {
+  height: 39px;
+  width: 39px;
+  background: #f7f2ed;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+}
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 23px;
+}
+.review-card blockquote {
+  font-family: Georgia, serif;
+  font-size: 1.12rem;
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+.review-card b,
+.review-card small {
+  display: block;
+  font-size: 0.8rem;
+}
+.review-card small {
+  color: var(--muted);
+}
+.faq-list {
+  border-top: 1px solid var(--line);
+}
+details {
+  border-bottom: 1px solid var(--line);
+  padding: 20px 0;
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] summary span {
+  transform: rotate(45deg);
+}
+details p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 720px;
+  margin: 13px 0 0;
+}
+.mobile-booking {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  text-align: center;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 999px;
+  padding: 14px;
+  z-index: 15;
+  box-shadow: var(--shadow);
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .benefit-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .master-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .master-card {
+    grid-template-rows: auto 1fr;
+  }
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mobile-booking {
+    display: none;
+  }
+}
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.service-card::before,
+.service-card::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #d89b9d;
+  border-radius: 50%;
+  opacity: 0;
+  transition:
+    opacity 0.35s ease,
+    transform 0.55s ease;
+}
+.service-card::before {
+  left: -33px;
+  top: -33px;
+  transform: scale(0.4);
+}
+.service-card::after {
+  right: -33px;
+  bottom: -33px;
+  transform: scale(0.4);
+}
+.service-card:hover {
+  transform: translateY(-7px);
+  border-color: #edccca;
+  box-shadow: 0 20px 35px rgba(143, 94, 91, 0.12);
+}
+.service-card:hover::before,
+.service-card:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.master-portrait {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
+  display: block;
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+.master-card {
+  overflow: hidden;
+}
+.master-card:hover .master-portrait {
+  transform: scale(1.025);
+  filter: brightness(1.03);
+}
+.review-photo {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+}
+.welcome-screen {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background: #f8f5f1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  transition:
+    opacity 0.7s ease,
+    visibility 0.7s ease;
+}
+.welcome-screen p {
+  font:
+    clamp(3.5rem, 12vw, 9rem) / 0.9 Georgia,
+    serif;
+  letter-spacing: -0.06em;
+  margin: 0 0 18px;
+}
+.welcome-screen i {
+  font-size: 0.52em;
+  font-weight: 400;
+}
+.welcome-screen span {
+  font-size: 0.68rem;
+  color: #9b6f72;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+.welcome-screen.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .welcome-screen {
+    display: none;
+  }
+}

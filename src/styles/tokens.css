@@ -1,0 +1,12 @@
+:root {
+  --ink: #2d2929;
+  --muted: #756e6b;
+  --milk: #fcfaf7;
+  --white: #fff;
+  --blush: #f3dedd;
+  --blush-dark: #dfaeb1;
+  --beige: #e9dfd2;
+  --line: #e7e0da;
+  --radius: 22px;
+  --shadow: 0 16px 40px rgba(78, 58, 47, 0.08);
+}

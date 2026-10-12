@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--milk);
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2,
+h3,
+.logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.08;
+}
+h1 {
+  font-size: clamp(2.65rem, 8vw, 6.5rem);
+  letter-spacing: -0.06em;
+}
+h2 {
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  letter-spacing: -0.055em;
+}
+h3 {
+  font-size: 1.45rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.section {
+  max-width: 1240px;
+  margin: auto;
+  padding: 76px 20px;
+}
+.eyebrow {
+  color: #9b6f72;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 560px;
+}
+.demo-bar {
+  background: #2d2929;
+  color: #fff;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 0.7rem;
+}
+.site-header {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+  background: var(--milk);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+.logo i {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+.navigation {
+  margin-left: auto;
+  display: flex;
+  gap: 24px;
+  font-size: 0.85rem;
+}
+.navigation a:hover,
+.text-link:hover {
+  color: #9b6f72;
+}
+.menu-toggle {
+  display: none;
+  margin-left: auto;
+  border: 0;
+  background: none;
+  font-size: 1.35rem;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 115px 32px;
+  }
+}
+@media (max-width: 767px) {
+  .site-header {
+    height: 64px;
+  }
+  .header-cta {
+    display: none;
+  }
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 12px;
+    right: 12px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 16px;
+    padding: 17px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .navigation.open {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}

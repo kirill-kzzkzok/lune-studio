@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 13px;
+  padding: 23px 20px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: center;
+}
+footer span + span::before {
+  content: "·";
+  margin-right: 13px;
+  color: #b7aaa3;
+}
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+footer a:hover,
+.contact-copy dd a:hover {
+  color: #9b6f72;
+}
+.contact-copy dd a {
+  transition: color 0.2s ease;
+}
