@@ -1,3 +1,4 @@
+// Мобильное меню
 export function initUI() {
   document.querySelector(".menu-toggle").addEventListener("click", (e) => {
     const nav = document.querySelector(".navigation");
@@ -14,6 +15,8 @@ export function initUI() {
         document.querySelector(".navigation").classList.remove("open"),
       ),
     );
+
+  // Появление карточек при скролле
   const observer = new IntersectionObserver(
     (items) =>
       items.forEach((x) => {

@@ -1,3 +1,4 @@
+// Демо-данные сайта: услуги, мастера, отзывы, вопросы и слоты записи
 export const services = [
   {
     id: "mani-cover",
@@ -56,7 +57,6 @@ export const masters = [
     role: "Nail-мастер · 5 лет опыта",
     specialty: "Минимализм, french, укрепление",
     serviceIds: ["mani-cover", "mani", "pedi-cover", "pedi", "strength"],
-    number: 2,
     rating: "5,0",
     reviewCount: 86,
     text: "Делает аккуратный маникюр в светлых и пастельных оттенках.",
@@ -67,7 +67,6 @@ export const masters = [
     role: "Массажист · 7 лет опыта",
     specialty: "Расслабляющий массаж спины и тела",
     serviceIds: ["body"],
-    number: 3,
     rating: "5,0",
     reviewCount: 54,
     text: "Помогает снять напряжение после рабочего дня.",
@@ -78,7 +77,6 @@ export const masters = [
     role: "Стилист-колорист · 8 лет опыта",
     specialty: "Сложные окрашивания и блонд",
     serviceIds: ["color"],
-    number: 4,
     rating: "5,0",
     reviewCount: 72,
     text: "Подбирает оттенок под ваш цветотип и привычный образ.",

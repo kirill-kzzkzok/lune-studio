@@ -29,25 +29,6 @@
   font-size: 0.85rem;
   font-weight: 600;
 }
-.image-placeholder {
-  background: #fff;
-  border: 1px solid #f0ece7;
-  display: grid;
-  place-items: center;
-  color: #111;
-  font-size: clamp(3rem, 10vw, 7rem);
-  font-family: Arial, sans-serif;
-  aspect-ratio: 1;
-  position: relative;
-}
-.image-placeholder figcaption {
-  position: absolute;
-  bottom: 14px;
-  left: 14px;
-  font-size: 0.8rem;
-  color: var(--ink);
-  font-family: Inter, Arial, sans-serif;
-}
 .section-heading {
   margin-bottom: 36px;
 }
@@ -127,9 +108,7 @@
 .master-card {
   display: grid;
   gap: 17px;
-}
-.master-card .image-placeholder {
-  border-radius: var(--radius);
+  overflow: hidden;
 }
 .master-card h3 {
   margin: 6px 0;
@@ -150,19 +129,6 @@
   background: #fff;
   border-radius: var(--radius);
   padding: 23px;
-}
-.avatar,
-.mini-placeholder {
-  height: 39px;
-  width: 39px;
-  background: #f7f2ed;
-  display: grid;
-  place-items: center;
-  font-size: 0.8rem;
-}
-.avatar {
-  border-radius: 50%;
-  margin-bottom: 23px;
 }
 .review-card blockquote {
   font-family: Georgia, serif;
@@ -295,20 +261,9 @@ details p {
     transform 0.5s ease,
     filter 0.5s ease;
 }
-.master-card {
-  overflow: hidden;
-}
 .master-card:hover .master-portrait {
   transform: scale(1.025);
   filter: brightness(1.03);
-}
-.review-photo {
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  display: block;
 }
 .welcome-screen {
   position: fixed;

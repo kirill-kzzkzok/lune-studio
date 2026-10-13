@@ -1,3 +1,4 @@
+// Живой ввод телефона: оставляем только цифры и символы маски
 export function initPhoneInput() {
   document.addEventListener("input", (e) => {
     if (e.target.name === "phone")

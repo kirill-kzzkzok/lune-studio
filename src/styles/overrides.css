@@ -39,12 +39,6 @@ details p {
 .review-card {
   will-change: transform;
 }
-.cta-note {
-  display: block;
-  margin-top: 10px;
-  color: #a47779;
-  font-size: 0.72rem;
-}
 .mobile-booking {
   display: none !important;
 }
@@ -79,37 +73,6 @@ details p {
 .atmosphere,
 .faq {
   display: none !important;
-}
-.trust-strip {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  padding-top: 44px !important;
-  padding-bottom: 44px !important;
-}
-.trust-strip > div {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px 16px;
-  box-shadow: 0 8px 24px rgba(65, 45, 40, 0.05);
-}
-.trust-strip strong {
-  display: block;
-  font:
-    600 clamp(1.5rem, 4vw, 2.2rem) / 1 Georgia,
-    serif;
-  color: var(--ink);
-}
-.trust-strip span {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 0.72rem;
-}
-@media (min-width: 768px) {
-  .trust-strip {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 .choice-meta {
   display: flex;
