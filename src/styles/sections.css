@@ -18,7 +18,7 @@
   gap: 22px;
   margin-top: 29px;
 }
-.hero-image {
+.hero-video {
   width: min(100%, 480px);
   justify-self: center;
   border-radius: 50% 50% 12px 12px;
@@ -350,7 +350,7 @@ footer {
   }
 }
 @media (min-width: 1100px) {
-  .hero-image {
+  .hero-video {
     justify-self: end;
   }
   .booking-panel {
@@ -366,7 +366,7 @@ footer {
   background: #d9cac2;
   isolation: isolate;
 }
-.hero-image {
+.hero-video {
   position: absolute;
   inset: 0;
   width: 100%;

@@ -8,7 +8,6 @@ import { services, masters, reviews, faqs } from "./data.js";
 import { initBooking } from "./booking.js";
 import { initPhoneInput } from "./form.js";
 import { initUI } from "./ui.js";
-import heroImage from "./assets/atmosphere/interior.jpg";
 import waitingImage from "./assets/atmosphere/waiting.webp";
 import workplaceImage from "./assets/atmosphere/workplace.jpg";
 import materialsImage from "./assets/atmosphere/materials.webp";
@@ -90,7 +89,6 @@ initUI();
 
 // --- Изображения ---
 
-document.querySelector(".hero-image").src = heroImage;
 
 const atmosphereImages = {
   waiting: waitingImage,
